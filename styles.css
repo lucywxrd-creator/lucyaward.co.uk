@@ -32,10 +32,10 @@ a:hover { color: var(--ink); }
 
 /* Header */
 .site-header { border-bottom: 1px solid var(--line); }
-.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 72px; flex-wrap: wrap; }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 72px; flex-wrap: wrap; padding-block: var(--space-4); }
 .brand { display: flex; align-items: center; gap: var(--space-3); color: var(--ink); text-decoration: none; }
-.brand svg { width: 36px; height: 36px; }
-.brand span { font-family: var(--font-display); font-weight: 800; font-size: 20px; letter-spacing: -0.02em; text-transform: uppercase; }
+.brand .wordmark { display: block; height: 22px; width: auto; }
+@media (min-width: 760px) { .brand .wordmark { height: 26px; } }
 .nav { display: flex; gap: var(--space-5); align-items: center; flex-wrap: wrap; }
 .nav a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 16px; }
 .nav a:hover { text-decoration: underline; }
