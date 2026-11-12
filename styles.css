@@ -106,3 +106,15 @@ a.card:hover { color: var(--ink); box-shadow: 0 1px 0 var(--line), 0 8px 24px -1
 .about-grid { display: grid; gap: var(--space-6); align-items: start; }
 .about-photo img { display: block; width: 100%; max-width: 280px; height: auto; border-radius: var(--radius-md, 6px); border: 0; }
 @media (min-width: 760px) { .about-grid { grid-template-columns: 280px minmax(0, 640px); gap: var(--space-7); } }
+
+/* Multi-page */
+.nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--pink); text-decoration-thickness: 3px; text-underline-offset: 6px; }
+.hero-page { padding-bottom: var(--space-6); }
+.page-title { font-size: clamp(40px, 7vw, 64px); }
+.block-first { padding-top: 0; border-top: 0; }
+.more-link { font-weight: 600; }
+.contact-grid { display: grid; gap: var(--space-7); align-items: start; }
+@media (min-width: 760px) { .contact-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.contact-email { font-size: 20px; font-weight: 600; word-break: break-word; }
+.checklist { padding-left: 1.2em; margin: 0; }
+.checklist li { margin-bottom: var(--space-3); }
